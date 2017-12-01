@@ -7,6 +7,10 @@
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1"
   },
