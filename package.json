@@ -2,5 +2,7 @@
   "name": "bozo-games-project-template",
   "version": "0.0.1",
   "description": "An empty socket.io app",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
