@@ -14,10 +14,19 @@ nmp install
 ```
 nodemon app.js
 ```
+6. update README.md
 
 
 
 ## Explaining the File structure
+TODO fill this out
+### app.js
+this is the file that starts the server and runs the entire app.
+### ./server
+in this folder all javascripts only to be run on server are placed
+#### ./server/socektIORoutes/routes.js
+
+### ./client
 
 ## Trouble shooting
 TODO: if you ever have problems fill this out
