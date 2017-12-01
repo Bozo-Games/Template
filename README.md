@@ -16,7 +16,8 @@ nodemon app.js
 ```
 6. update README.md
 
-
+## Testing
+TODO fill out
 
 ## Explaining the File structure
 TODO fill this out
@@ -32,5 +33,6 @@ in this folder all javascripts only to be run on server are placed
 TODO: if you ever have problems fill this out
 ## Useful Links
  - [p5.js](5js.org/reference/)
+ - [mocha](https://mochajs.org/)
 
 
