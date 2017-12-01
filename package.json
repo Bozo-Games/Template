@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "An empty socket.io app",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }

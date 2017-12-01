@@ -7,10 +7,20 @@ let io = require('socket.io')(http);
 
 //set Routes
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/client/html/pt.html');
+	res.sendFile(__dirname + '/client/html/p5.html');
 });
 app.use( express.static('client')); //used to allow any file in client to be loaded by end user
 //start the server
 http.listen(3000, function(){
 	console.log('listening on *:3000');
+});
+//get routes functions
+const routes = require('./server/socketIORoutes/routes.js');
+//Socket IO Routes handler
+io.on('connection', function(socket) {
+	let inboundKeys = Object.keys(routes.inbound); //grab all inbound names
+	for(let i = 0; i < inboundKeys.length; i++) {  //look though names
+		let key = inboundKeys[i];
+		socket.on(key,routes.inbound[key]); //assign function associated with that name
+	}
 });

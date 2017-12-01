@@ -5,8 +5,9 @@ this project is meant to be cloned as a starting point for projects.
 
 1. download this project
 2. rename the root directory to the name of your new project
-3.
-TODO: fill this out which tells ppl how to copy this template
+3. rename the project in package.json
+4. run nmp install
+
 
 ## Explaining the File structure
 
