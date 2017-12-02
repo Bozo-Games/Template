@@ -1,6 +1,6 @@
 "use strict";
 const assert = require('assert');
-const routes = require('../../../server/socketIORoutes/routes.js');
+const routes = require('../../server/socketIORoutes/routes.js');
 describe('Server/socketIORoute/routes.js', function () {
 	it('should exist', function() {
 		assert.ok(routes !== undefined)

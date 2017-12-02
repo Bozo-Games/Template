@@ -5,9 +5,11 @@ let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
 //set Routes
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/client/html/p5.html');
+	res.render(__dirname + '/client/html/p5.html.ejs',{params:req.query});
 });
 app.use( express.static('client')); //used to allow any file in client to be loaded by end user
 //start the server

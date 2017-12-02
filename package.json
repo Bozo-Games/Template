@@ -3,18 +3,17 @@
   "version": "0.0.1",
   "description": "An empty socket.io app",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
-    "jasmine-core": "^2.8.0",
-    "karma": "^1.7.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.1",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "nyc": "^11.3.0",
+    "qunit": "^2.4.1"
   },
   "scripts": {
-    "test": "find ./Tests -name '*_test.js' | xargs mocha -R spec"
+    "test": "find ./Tests -name '*_test.js' | xargs nyc mocha -R spec"
   }
 }
