@@ -3,22 +3,18 @@
   "version": "0.0.1",
   "description": "An empty socket.io app",
   "dependencies": {
-    "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "nodemon": "^1.12.1"
   },
   "devDependencies": {
-    "karma": "^1.7.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage": "^1.1.1",
-    "karma-jasmine": "^1.1.1",
-    "karma-qunit": "^1.2.1",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1",
-    "nyc": "^11.3.0",
-    "qunit": "^2.4.1"
+      "nodemon": "^1.12.1",
+      "seedrandom": "^2.4.3"
   },
-  "scripts": {
-    "test": "find ./Tests -name '*_test.js' | xargs nyc mocha -R spec"
-  }
+    "scripts": {
+        "test": "find ./Tests -name '*.spec.js' | xargs nyc mocha -R spec"
+    }
 }
+
+
